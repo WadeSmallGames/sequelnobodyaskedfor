@@ -19,22 +19,17 @@ public class ObjectPooler : MonoBehaviour
         }
     }
 
-    public void Spawn<T>(out T output)
+    public void Spawn<T>(out T output) => Spawn().TryGetComponent(out output);
+
+    public GameObject Spawn()
     {
-        output = default;
+        foreach (var obj in objects)
+        {
+            if (!obj.activeInHierarchy)
+                obj.SetActive(true);
+            return obj;
+        }
 
-
-    }
-
-    public void Spawn()
-    {
-        
-
-
-    }
-
-    void Activate()
-    {
-        //foreach()
+        return null;
     }
 }
