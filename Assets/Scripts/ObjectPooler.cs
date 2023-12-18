@@ -35,6 +35,6 @@ public class ObjectPooler : MonoBehaviour
 
     void Activate()
     {
-        foreach()
+        //foreach()
     }
 }
