@@ -34,9 +34,9 @@ public class PlayerController : MonoBehaviour
         if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D)) wasd.x = 0;
         if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)) wasd.z = 0;
 
+        _rb.velocity = wasd * moveSpeed;
         newPos = transform.position + wasd;
-        Debug.DrawLine(transform.position, newPos, Color.red);
-        transform.position = Vector3.Lerp(transform.position, newPos, Time.deltaTime * moveSpeed);
+        
     }
 
     bool inAir;
