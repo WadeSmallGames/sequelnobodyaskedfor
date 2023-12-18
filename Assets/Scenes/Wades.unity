@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 1642857375}
   m_Layer: 0
   m_Name: rtrr
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -530,6 +530,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5507054240847384646, guid: 04bc74160c44d8b44b6fb95b6bc21308, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5507054242453784672, guid: 04bc74160c44d8b44b6fb95b6bc21308, type: 3}
       propertyPath: m_Name
       value: Traveller

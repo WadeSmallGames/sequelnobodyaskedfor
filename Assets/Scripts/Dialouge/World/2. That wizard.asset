@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: 2. That wizard
   m_EditorClassIdentifier: 
   voiceClip: {fileID: 0}
-  voiceLine: 
+  voiceLine: you remember the small evil guy from 6 monthra ago, who was dead set
+    on taking over the kingdom with his army of Slimes and Skeletons!
   sprite: {fileID: 0}

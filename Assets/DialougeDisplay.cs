@@ -26,7 +26,6 @@ public class DialougeDisplay : MonoBehaviour
     {
         if (!speaker.isPlaying && sayingLine)
         {
-            sayingLine = false;
             i++;
             playLine(myLine);
         }
@@ -34,7 +33,10 @@ public class DialougeDisplay : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        playLine(myLine);
+        if (!sayingLine)
+        {
+            playLine(myLine);
+        }
     }
 
 
@@ -42,7 +44,7 @@ public class DialougeDisplay : MonoBehaviour
     {
         canvas.enabled = true;
         if (i <= CHAR.voiceLine.Length - 1)
-            if (!sayingLine && CHAR.voiceLine[i] != null && !Finished)
+            if (CHAR.voiceLine[i] != null && !Finished)
             {
                 sayingLine = true;
 

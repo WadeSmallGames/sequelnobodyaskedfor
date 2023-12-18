@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a03563ba382b7e4bad56c723584eb84, type: 3}
   m_Name: Intro
   m_EditorClassIdentifier: 
-  voiceLine: []
+  voiceLine:
+  - {fileID: 11400000, guid: c2b682a5797627741bdd68a686447b6d, type: 2}
+  - {fileID: 11400000, guid: d38e6667012cf2a449c0cc1ec5712a99, type: 2}
+  - {fileID: 11400000, guid: adf675f83c3ce454b8ff051a7eed3c60, type: 2}

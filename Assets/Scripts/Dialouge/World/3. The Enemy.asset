@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57d778dedf66554458c8292ad3731244, type: 3}
-  m_Name: 2. The Enemy
+  m_Name: 3. The Enemy
   m_EditorClassIdentifier: 
   voiceClip: {fileID: 0}
   voiceLine: I've heard his Great Grandson Heathera the Heathen is out for your head.
-    Be Warry Great Hero
+    Be Warry Great Hero he commands an army of Skelly-Slimes and summoners.
   sprite: {fileID: 0}

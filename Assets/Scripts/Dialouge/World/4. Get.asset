@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57d778dedf66554458c8292ad3731244, type: 3}
-  m_Name: 1. Welcomeback
+  m_Name: 4. Get
   m_EditorClassIdentifier: 
   voiceClip: {fileID: 0}
-  voiceLine: 'Welcome back brave hero, I hope you''ve rested well after felling the
-    Dark Wizard Ulderan. '
+  voiceLine: Anyway off with Hero, the kingdom won't save it self. I know you like
+    sitting, shoo shoo! get!
   sprite: {fileID: 0}
