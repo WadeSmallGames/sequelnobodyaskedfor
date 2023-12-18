@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class FpsController : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class FpsController : MonoBehaviour
         CheckForBob();
         magni = cc.velocity.magnitude;
         animator.SetBool("Moving", isMoving);
+        if (Input.GetMouseButton(0)) Fire();
 
         
     }
@@ -60,5 +62,10 @@ public class FpsController : MonoBehaviour
         {
             isMoving = true;
         }
+    }
+
+    void Fire()
+    {
+        GetComponentInChildren<ObjectPooler>().Spawn(out Projectile projectile);
     }
 }
