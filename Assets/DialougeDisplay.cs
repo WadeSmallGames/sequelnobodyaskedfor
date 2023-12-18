@@ -12,11 +12,13 @@ public class DialougeDisplay : MonoBehaviour
     bool sayingLine = false;
     int i = 0;
     bool Finished = false;
+    Canvas canvas;
     // Start is called before the first frame update
     void Start()
     {
         tBox = GetComponentInChildren<TMP_Text>();
         speaker = GetComponentInChildren<AudioSource>();
+        canvas = GetComponentInChildren<Canvas>();
     }
 
     // Update is called once per frame
@@ -27,7 +29,7 @@ public class DialougeDisplay : MonoBehaviour
             sayingLine = false;
             i++;
             playLine(myLine);
-        }   
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,19 +40,22 @@ public class DialougeDisplay : MonoBehaviour
 
     void playLine(CharacterDialouge CHAR)
     {
-        if (Finished) return;
-
-        if (!sayingLine && CHAR.voiceLine[i] != null)
-        {
-                sayingLine = true;
+        canvas.enabled = true;
+        if (i <= CHAR.voiceLine.Length - 1)
+            if (!sayingLine && CHAR.voiceLine[i] != null && !Finished)
             {
+                sayingLine = true;
+
                 tBox.text = CHAR.voiceLine[i].voiceLine;
                 speaker.clip = CHAR.voiceLine[i].voiceClip;
                 speaker.Play();
             }
-        }
+            else
+            {
+                canvas.enabled = false;
 
-        else Finished = true; return;
-        
+                Finished = true; return;
+            }
+        else canvas.enabled = false;
     }
 }
