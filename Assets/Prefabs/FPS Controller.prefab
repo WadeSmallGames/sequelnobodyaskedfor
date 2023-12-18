@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6150671951929260680}
   - component: {fileID: 6194371957754419315}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5883505990602682751}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.6}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7fe79ff1a64d874caef7bf7ea75c94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 109644005923118836, guid: f2c65b57d564cf148935c5aeb0a240fe, type: 3}
+  objectToSpawn: {fileID: 650726547047756285, guid: d9cc4ade529503348a1bb3b41586cf26, type: 3}
   amount: 30
 --- !u!1 &7327598712530757298
 GameObject:
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 7327598712530757297}
   - component: {fileID: 7327598712530757296}
   - component: {fileID: 7327598712530757299}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 7327598713850885981}
   - component: {fileID: 7327598713850885980}
   - component: {fileID: 7327598713850885983}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FPS Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
