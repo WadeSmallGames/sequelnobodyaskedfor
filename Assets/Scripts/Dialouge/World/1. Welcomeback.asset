@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d778dedf66554458c8292ad3731244, type: 3}
   m_Name: 1. Welcomeback
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 43b149369c1d9954786ff7c71c95f3c7, type: 3}
   voiceLine: 'Welcome back brave hero, I hope you''ve rested well after felling the
     Dark Wizard Ulderan. '
   sprite: {fileID: 0}

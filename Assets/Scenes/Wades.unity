@@ -538,6 +538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Traveller
       objectReference: {fileID: 0}
+    - target: {fileID: 5507054242453784675, guid: 04bc74160c44d8b44b6fb95b6bc21308, type: 3}
+      propertyPath: myLine
+      value: 
+      objectReference: {fileID: 11400000, guid: 29786f6170f149f4185d1681c006a3ed, type: 2}
     - target: {fileID: 5507054242453784687, guid: 04bc74160c44d8b44b6fb95b6bc21308, type: 3}
       propertyPath: m_RootOrder
       value: 4

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Village_1'
   m_EditorClassIdentifier: 
   voiceClip: {fileID: 8300000, guid: 1db81fabd7d642a4c80f552a9da8c47a, type: 3}
-  voiceLine: Why are you reaching for a sword!!!!
+  voiceLine: 'Have you heard the rumour that Heathera is actually the illegitament
+    child of your sister Queen '
   sprite: {fileID: 0}

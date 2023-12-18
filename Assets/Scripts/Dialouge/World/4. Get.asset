@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d778dedf66554458c8292ad3731244, type: 3}
   m_Name: 4. Get
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
+  voiceClip: {fileID: 8300000, guid: 1409c65cd166bd54cad02fc215b48112, type: 3}
   voiceLine: Anyway off with Hero, the kingdom won't save it self. I know you like
     sitting, shoo shoo! get!
   sprite: {fileID: 0}
