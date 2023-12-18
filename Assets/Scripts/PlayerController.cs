@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody _rb;
     [SerializeField] float moveSpeed = 3f;
     [SerializeField] float jumpForce = 5f;
+    [SerializeField] float rotationSpeed = 3f;
 
     private void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovementInput();
         HandleJumpInput();
+        HandleRotation();
     }
 
     void HandleMovementInput()
@@ -45,6 +48,21 @@ public class PlayerController : MonoBehaviour
         _rb.AddForce(new(0, 1 * jumpForce, 0), ForceMode.Impulse);
         inAir = true;
 
+    }
+
+    void HandleRotation()
+    {
+        Vector3 dir = (newPos - transform.position).normalized;
+
+        if (dir == Vector3.zero) return;
+
+        float dot = Vector3.Dot(transform.forward, dir);
+        dot = -dot;
+        dot += 2;
+        dot *= rotationSpeed;
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * dot);
+        Debug.DrawRay(transform.position, dir, Color.blue);
     }
 
     private void OnCollisionEnter(Collision collision)
