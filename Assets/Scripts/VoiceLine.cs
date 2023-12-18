@@ -6,6 +6,7 @@ using UnityEngine;
 public class VoiceLine : ScriptableObject 
 {
     public AudioClip voiceClip;
-    public string voiceLine;
+    [TextArea]
+    public  string voiceLine;
     public Sprite sprite;
 }

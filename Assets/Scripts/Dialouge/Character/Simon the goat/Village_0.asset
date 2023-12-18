@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57d778dedf66554458c8292ad3731244, type: 3}
-  m_Name: Village_1'
+  m_Name: Village_0
   m_EditorClassIdentifier: 
-  voiceClip: {fileID: 0}
-  voiceLine: Why are you reaching for a sword!!!!
+  voiceClip: {fileID: 8300000, guid: 875baaea83e6acb46ae5887273b6acd6, type: 3}
+  voiceLine: Thank you hero for saving us!
   sprite: {fileID: 0}
