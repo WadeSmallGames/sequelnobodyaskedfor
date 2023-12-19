@@ -41,12 +41,19 @@ public class ObjectPooler : MonoBehaviour
 
     async void ResetObject(GameObject obj)
     {
-        await Task.Delay(8 * 1000);
+        await Task.Delay(3 * 1000);
 
         if (!Application.isPlaying) return;
 
         if (!obj.activeInHierarchy) return;
 
+        obj.transform.SetParent(transform);
+        obj.transform.localPosition = Vector3.zero;
+        obj.SetActive(false);
+    }
+
+    public void QReset(GameObject obj)
+    {
         obj.transform.SetParent(transform);
         obj.transform.localPosition = Vector3.zero;
         obj.SetActive(false);
